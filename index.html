@@ -11,95 +11,85 @@
     <meta property="og:description" content="Digital marketing strategies that drive results.">
     <meta property="og:image" content="https://via.placeholder.com/1200x630">
     <meta property="og:url" content="https://www.yourwebsite.com">
-    <title>Prizm Sports Marketing</title>
-    <link rel="stylesheet" href="styles.css">
+    <title >Prizm Sports Marketing</title>
+    
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+
+
 
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1  class="logo">Prizm Sports Marketing</h1>
+    <!-- Header Section -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo">Prizm Sports Marketing</h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="sportsmarketing.html">Memorabilia</a></li>
-                    <li><a href="nil.html">NIL</a></li>
-                    
-                    <li><a href="contact.html">Contact Us</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
+                    <li class="nav-item"><a href="#Memorabilia" class="nav-link text-white">Memorabilia</a></li>
+                    <li class="nav-item"><a href="#nil" class="nav-link text-white">NIL</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Main Section -->
     <main>
         <!-- Video Slider Section -->
-        <section id="home"  class="video-slider">
-            <div class="video-slider-container">
-                <div class="video-slider-slide">
-                    <div class="video-wrapper">
-                        <video autoplay loop muted >
-                            <source src="videos/intro-real.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="overlay-text">
-                            <img src="photos/PSM logo.jpg" alt="PSM logo" class="psm-image">
-
-                            <a href="contact.html" class="cta-button">Get in Touch</a>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!-- Add more slides as needed -->
+        <section id="home" class="video-slider position-relative">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1018528990?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&badge=0&autopause=0" 
+                        frameborder="0" 
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                        title="Prizm Intro Video"></iframe>
+            </div>
+            <div class="overlay-text">
+                <img src="photos/PSM-logo.jpg" alt="PSM logo" class="psm-image img-fluid">
+                
             </div>
         </section>
 
-                <!-- Hero Section -->
-                <div id="services" class = "serv">
-                    <h2 >Services</h2> 
-                </div>
+        <!-- Services Section -->
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="gold text-center">Services</h2>
+            </div>
+        </section>
 
 <!-- Talent Marketing Section -->
-<section id="strategic-partnerships" class="about">
-    <div class="tm-container">
-        <div class="tm-content">
-            <div class="tm-text-space">
-                <h2 class = "gold">Talent Marketing</h2>
+<section id="strategic-partnerships" class="about py-5">
+    <div class="container">
+        <div class="content">
+            <div class="item">
+                <h2 class="gold">Talent Marketing</h2>
                 <p>At PSM, we understand that talent marketing is more than just promotion—it's about building a legacy. Our approach is centered on showcasing the unique qualities, skills, and achievements of our clients, ensuring they reach the right audience at the right time. From elite athletes to cultural influencers, we create tailored strategies that elevate our clients' brands and open doors to exciting opportunities.</p>
-                
             </div>
-            <div class="tm-photo fade-in">
-                <video class="tm-video" src="videos/tmvid.mp4" autoplay muted loop></video>
+            <div class="item">
+                <img class="img-fluid" src="photos/Sauce Gardner Buffalo Wild Wings.jpg" alt="Brand Building" >
             </div>
-        </div>
-        <div class="tm-content">
-            <div class="tm-photo fade-in">
-                <video class="tm-video" src="videos/Jrue Holiday.mp4" autoplay muted loop></video>
-            </div>
-            <div class="tm-text-space">
-                <h2 class = "gold">Strategic Partnerships</h2>
-                <p>At PSM, we believe in creating long-term relationships, not just transactions. Our focus is on building brand equity and ensuring that every partnership we forge enhances our clients' personal and professional narratives. With our connections to some of the most recognized brands in the world, we deliver strategic partnerships that resonate and drive sustained value.</p>
-                
-            </div>
-
         </div>
     </div>
 </section>
 
-
-<!-- Brand Building Section -->
-<section id="brand-building" class="about">
-    <div class="tm-container">
-        <div class="tm-content">
-            <div class="tm-text-space">
-                <h2 class = "gold">Brand Building & Endorsements</h2>
+<!-- Brand Building & Endorsements -->
+<section id="brand-building" class="about py-5 bg-light">
+    <div class="container">
+        <div class="content">
+            <div class="item">
+                <h2 class="gold">Brand Building & Endorsements</h2>
                 <p>We go beyond traditional marketing by crafting sophisticated strategies that amplify our clients' brands. This includes everything from endorsements and licensing to personal appearances and speaking engagements. We work closely with our clients to develop authentic and aligned brand narratives, facilitating introductions to national and international brands for endorsement opportunities that reflect their passions.</p>
             </div>
-            <div class="tm-photo fade-in">
-                <img class="tm-photo" src="photos/redefined.jpg" alt="Brand Building">
+            <div class="item">
+                <img class="img-fluid" src="photos/redefined.jpg" alt="Brand Building">
             </div>
         </div>
     </div>
@@ -107,359 +97,487 @@
 
 
 
-<!-- Brand Building Section -->
-<section id="brand-building" class="about">
-    <div class="tm-container">
-        <div class="tm-content">
-
-            <div class="tm-photo fade-in">
-                <img class="tm-photo" src="photos/girl-mic.jpg" alt="Brand Building">
-            </div>
-            <div class="tm-text-space">
-                <h2 class = "gold">Media & Public Relations at PSM
-                </h2>
-                <p>At PSM, we craft and manage your public image to ensure your story resonates. Through strategic media relations and targeted outreach, we position our clients as influential voices in their fields. Our extensive network of global media contacts allows us to secure impactful coverage, highlighting your achievements and enhancing your reputation.
-                </p>
-            </div>
-            
-        </div>
-    </div>
-</section>
 
 
-
-<!-- Brand Building Section -->
-<section id="brand-building" class="brand-about">
-    <div class="brand-tm-container">
-        <div class="brand-tm-content">
-            <div class="tm-photo fade-in">
-                <img class="brand-tm-photo" src="photos/airhorn-chris.jpg" alt="Brand Building">
-            </div>
-            <div class="brand-tm-text-space">
-                <h2 class = "gold">Events
-                </h2>
-                <p>PSM specializes in creating unforgettable live and virtual events. From ideation to execution, we handle every detail, including event management, partner alignment, and vendor selection. Whether it's a large-scale event or a unique passion project, we bring your vision to life with precision and creativity.
-
-                </p>
-            </div>
-            <div class="tm-photo fade-in">
-                <img class="brand-tm-photo" src="photos/chris-flag.jpg" alt="Brand Building">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Brand Building Section -->
-<section id="Business" class="about">
-    <div class="tm-container">
-        <div class="tm-content">
-            <div class="tm-text-space">
-                <h2 class = "gold">Business Ventures
-                </h2>
-                <p>At PSM, we empower our clients to explore new entrepreneurial opportunities. From market research and strategic planning to financial modeling and venture partnerships, we provide the guidance and resources needed to turn innovative ideas into successful business ventures. Whether it's in sports tech, media, or other emerging industries, PSM is here to support every step of the journey.
-                </p>
-            </div>
-            <div class="tm-photo fade-in">
-                <img class="tm-photo" src="photos/bizven.jpg.png" alt="Business">
-            </div>
-        </div>
-    </div>
-</section>
-
-        <!-- Expertise Section -->
-        <section id="community" class="about">
-            <div class="tm-container">
-                <div class="tm-content">
-                <div class="com-photo fade-in">
-                    <img  src="photos/jared.jpg" alt="community" style="width: 140%; height: auto; max-width: 1000px;">
+        <!-- Media & Public Relations -->
+        <section id="media" class="about py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="gold">Media & Public Relations</h2>
+                        <p>We craft and manage your public image to ensure your story resonates. Through strategic media relations and targeted outreach, we position our clients as influential voices in their fields. Our extensive network of global media contacts allows us to secure impactful coverage, highlighting your achievements and enhancing your reputation.</p>
                     </div>
-                
-            
-                <div class="tm-content">
-                    <div class="tm-text-space">
-                        <h2 class = "gold">Community Relations</h2>
-                        <p>At PSM, we believe in the power of athletes to inspire and give back. We help our clients engage with their communities through charitable events, partnerships, and local initiatives. Whether it’s launching a foundation, supporting a cause, or organizing community outreach, we guide our clients in making a lasting positive impact.
-                        </p>
+                    <div class="col-md-6">
+                        <img src="photos/girl-mic.jpg" alt="Media" class="img-fluid">
                     </div>
-                    </div>
-                    <div class="tm-container">
-                        <div class="tm-content">
-                        <div class="com-photo fade-in">
-                            <img class="tm-photo" src="photos/comunity-chris.jpg" alt="community" style="width: 400%; max-width: 2000px;">
-                            </div>
+
+                </div>
             </div>
         </section>
 
+        <!-- Events Section -->
+        <section id="events" class="about py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="photos/airhorn-chris.jpg" alt="Events" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="gold">Events</h2>
+                        <p>PSM specializes in creating unforgettable live and virtual events. From ideation to execution, we handle every detail, including event management, partner alignment, and vendor selection. Whether it's a large-scale event or a unique passion project, we bring your vision to life with precision and creativity.</p>
+                    </div>
 
 
-<!-- Brand Building Section -->
-<section id="brand-building" class="brand-about">
-    <div class="brand-tm-container">
-        <div class="brand-tm-content">
-            <div class="tm-photo fade-in">
-                <img class="brand-tm-photo" src="photos/JR-Smith-golfing-at-the-Elon-Phoenix-Invitational-5195fc6c221242eca369a00a3be672fb.jpg" alt="Brand Building">
+                </div>
             </div>
-            <div class="brand-tm-text-space">
-                <h2 class = "gold">NIL
-                </h2>
-                <p>PSM is committed to helping collegiate athletes maximize their Name, Image, and Likeness (NIL) opportunities. We offer comprehensive NIL advisory services, guiding athletes through the complexities of NIL deals and partnerships. From negotiating endorsements to managing time and maximizing value, PSM ensures that our clients are empowered to build their brand and seize every opportunity.
-                </p>
-            </div>
-            <div class="tm-photo fade-in">
-                <img class="brand-tm-photo" src="photos/pitcher.jpg" alt="Brand Building">
-            </div>
+        </section>
+                    <!-- Memorabilia Section -->
+<!-- NBA Section -->
+<section id="nba-carousel" class="carousel">
+    <h2> Memorabilia Talent: NBA</h2>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="photos/Domantas Sabonis - Sacramento Kings.jpg" alt="Person 1" class="carousel-image">
+            <h3 class="carousel-title">Domantas Sabonis - Sacramento Kings</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Austin Reaves - Los Angeles Lakers.jpg" alt="Person 2" class="carousel-image">
+            <h3 class="carousel-title">Austin Reaves - Los Angeles Lakers</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Jrue Holiday - Boston Celtics.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Jrue Holiday - Boston Celtics</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Tracy McGrady - NBA Hall of Fame.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Tracy McGrady - NBA Hall of Fame</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Udonis Haslem - Miami Heat.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Udonis Haslem - Miami Heat</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Peja Stojakovic - Sacramento Kings.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Peja Stojakovic - Sacramento Kings</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Franz Wagner - Orlando Magic.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Franz Wagner - Orlando Magic</h3>
         </div>
     </div>
+    <button class="carousel-button prev" onclick="moveSlide('nba-carousel', -1)">&#10094;</button>
+    <button class="carousel-button next" onclick="moveSlide('nba-carousel', 1)">&#10095;</button>
 </section>
 
-<!-- Brand Building Section -->
-<section id="brand-building" class="brand-about">
-    <div >
-        <div class="brand-tm-content">
-
-            <div class="brand-tm-text-space">
-                <h2 class = "gold">Memorabilia Signings
-                </h2>
-                <p>At PSM, we broker high-profile sports memorabilia signings, both public and private. Leveraging our extensive network and industry expertise, we connect athletes with opportunities through a variety of exclusive signing events. Whether it’s a public signing with fans or a private session, we handle the logistics and coordination, ensuring a seamless and successful experience every time.
-                    
-                </p>
-                <a href="sportsmarketing.html" class="cta-button">Check out our clients</a>
-            </div>
-
+<!-- NFL Section -->
+<section id="nfl-carousel" class="carousel">
+    <h2> Memorabilia Talent: NFL</h2>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="photos/Sauce Gardner - New York Jets.jpg" alt="Person 1" class="carousel-image">
+            <h3 class="carousel-title">Sauce Gardner - New York Jets</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Austin Ekeler - Washington Commanders.jpg" alt="Person 2" class="carousel-image">
+            <h3 class="carousel-title">Austin Ekeler - Washington Commanders</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Tony Pollard - Tennessee Titans.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Tony Pollard - Tennessee Titans</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Maurice Jones-Drew - Jacksonville Jaguars.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Maurice Jones-Drew - Jacksonville Jaguars</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Roddy White - Atlanta Falcons.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Roddy White - Atlanta Falcons</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Ray Ray McCloud - Atlanta Falcons.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Ray Ray McCloud - Atlanta Falcons</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Kenny Moore - Indianapolis Colts.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Kenny Moore - Indianapolis Colts</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Michael Turner - Atlanta Falcons.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Michael Turner - Atlanta Falcons</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Kaeden Elliss - Atlanta Falcons.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Kaeden Elliss - Atlanta Falcons</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/E.J. Speed - Indianapolis Colts.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">E.J. Speed - Indianapolis Colts</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Chris Lammons - Indianapolis Colts.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Chris Lammons - Indianapolis Colts</h3>
+        </div>
+        <div class="carousel-slide">
+            <img src="photos/Charlie Woerner - Atlanta Falcons.jpg" alt="Person 3" class="carousel-image">
+            <h3 class="carousel-title">Charlie Woerner - Atlanta Falcons</h3>
         </div>
     </div>
+    <button class="carousel-button prev" onclick="moveSlide('nfl-carousel', -1)">&#10094;</button>
+    <button class="carousel-button next" onclick="moveSlide('nfl-carousel', 1)">&#10095;</button>
 </section>
 
+<script>
+    let currentSlides = {
+        'nba-carousel': 0,
+        'nfl-carousel': 0
+    };
 
-    <!-- Partners Section -->
-    <section id="partners" class="partners">
-        <h2 class = "gold">Partners</h2>
-        <div class="container">
+    function showSlide(carouselId, index) {
+        const slides = document.querySelectorAll(`#${carouselId} .carousel-slide`);
+        const totalSlides = slides.length;
+
+        if (index >= totalSlides) {
+            currentSlides[carouselId] = 0; // Loop back to the first slide
+        } else if (index < 0) {
+            currentSlides[carouselId] = totalSlides - 1; // Go to the last slide
+        } else {
+            currentSlides[carouselId] = index;
+        }
+
+        const offset = -currentSlides[carouselId] * 100; // Calculate offset based on current slide
+        document.querySelector(`#${carouselId} .carousel-container`).style.transform = `translateX(${offset}%)`;
+    }
+
+    function moveSlide(carouselId, direction) {
+        showSlide(carouselId, currentSlides[carouselId] + direction);
+    }
+
+    // Initialize the first slide for both carousels
+    showSlide('nba-carousel', currentSlides['nba-carousel']);
+    showSlide('nfl-carousel', currentSlides['nfl-carousel']);
+</script>
+
+
             
-            <div class="partners-wrapper">
-                <div class="partners-scroll">
-                    <div class="partners-list">
-                        <div class="partner-item">
-                            <img src="photos/logo_fivepointfour.jpg" alt="Five Point Four">
-                            <div class="partner-overlay">
-                                <span>Five Point Four</span>
-                            </div>
-                        </div>
-                        <div class="partner-item">
-                            <img src="photos/mlselogo.jpg" alt="MLSE">
-                            <div class="partner-overlay">
-                                <span>MLSE</span>
-                            </div>
-                        </div>
-                        <div class="partner-item">
-                            <img src="photos/bglogo.jpg" alt="BG">
-                            <div class="partner-overlay">
-                                <span>BG</span>
-                            </div>
-                        </div>
-                        <div class="partner-item">
-                            <img src="photos/SNY4.jpg" alt="SNY">
-                            <div class="partner-overlay">
-                                <span>SNY</span>
-                            </div>
-                        </div>
-                        <div class="partner-item">
-                            <img src="photos/LEAF-Logo.jpg" alt="Leaf">
-                            <div class="partner-overlay">
-                                <span>Leaf</span>
-                            </div>
-                        </div>
+        </script>
+        
 
 
-                        <div class="partner-item">
-                            <img src="photos/cosmo.jpg" alt="Cosmo Hotel">
-                            <div class="partner-overlay">
-                                <span>Cosmo Hotel</span>
+                <!-- Events Section -->
+                <section id="events" class="about py-5 bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="gold">Business Ventures</h2>
+                                <p>At PSM, we empower our clients to explore new entrepreneurial opportunities. From market research and strategic planning to financial modeling and venture partnerships, we provide the guidance and resources needed to turn innovative ideas into successful business ventures. Whether it's in sports tech, media, or other emerging industries, PSM is here to support every step of the journey.</p>
                             </div>
+                            <div class="col-md-6">
+                                <img src="photos/airhorn-chris.jpg" alt="Events" class="img-fluid">
+                            </div>
+        
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/bellagio-hotel-and-casino-logo-primary-e1421523802448.jpg" alt="Belagio">
-                            <div class="partner-overlay">
-                                <span>Belagio</span>
+                    </div>
+                </section>
+
+
+
+                <!-- Media & Public Relations -->
+                <section id="community" class="about py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="photos/Sauce Gardner Cheese Head.jpg" alt="Media" class="img-fluid">
                             </div>
+                            <div class="col-md-6">
+                                <h2 class="gold">Community Relations</h2>
+                                <p>At PSM, we believe in the power of athletes to inspire and give back. We help our clients engage with their communities through charitable events, partnerships, and local initiatives. Whether it’s launching a foundation, supporting a cause, or organizing community outreach, we guide our clients in making a lasting positive impact.</p>
+                            </div>
+
+
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/usabball.jpg" alt="Team USA Basketball">
-                            <div class="partner-overlay">
-                                <span>Team USA Basketball</span>
-                            </div>
+                    </div>
+                </section>
+
+                                <!-- Events Section -->
+                                <section id="nil" class="about py-5 bg-light">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h2 class="gold">NIL</h2>
+                                                <p>PSM is committed to helping collegiate athletes maximize their Name, Image, and Likeness (NIL) opportunities. We offer comprehensive NIL advisory services, guiding athletes through the complexities of NIL deals and partnerships. From negotiating endorsements to managing time and maximizing value, PSM ensures that our clients are empowered to build their brand and seize every opportunity.</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="photos/airhorn-chris.jpg" alt="Events" class="img-fluid">
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                </section>
+
+
+<!-- Partners Section -->
+<section id="partners" class="partners">
+    <h2 class="gold text-center">Partners</h2>
+    <div class="container">
+        <div class="partners-wrapper">
+            <div class="partners-scroll">
+                <div class="partners-list">
+                    <!-- Original partners -->
+                    <div class="partner-item">
+                        <img src="photos/logo_fivepointfour.jpg" alt="Five Point Four">
+                        <div class="partner-overlay">
+                            <span>Five Point Four</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/adidaslogo.jpg" alt="Adidas">
-                            <div class="partner-overlay">
-                                <span>Adidas</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/mlselogo.jpg" alt="MLSE">
+                        <div class="partner-overlay">
+                            <span>MLSE</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/SummitLogo.jpg" alt="Summitt Gym">
-                            <div class="partner-overlay">
-                                <span>Summitt Gym</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/bglogo.jpg" alt="BG">
+                        <div class="partner-overlay">
+                            <span>BG</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/fanlink.jpg" alt="Fan Link">
-                            <div class="partner-overlay">
-                                <span>Fan Link</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/SNY4.jpg" alt="SNY">
+                        <div class="partner-overlay">
+                            <span>SNY</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/FYS_LogoOriginal_campaign1681427044285.jpg" alt="FYS">
-                            <div class="partner-overlay">
-                                <span>FYS</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/Leaf-Logo.jpg" alt="Leaf">
+                        <div class="partner-overlay">
+                            <span>Leaf</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/img.jpg" alt="IMG">
-                            <div class="partner-overlay">
-                                <span>IMG</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/cosmo.jpg" alt="Cosmo Hotel">
+                        <div class="partner-overlay">
+                            <span>Cosmo Hotel</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/Riddell+Primary+Wordmark_mid.jpg" alt="Ridell">
-                            <div class="partner-overlay">
-                                <span>Ridell</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/bellagio-hotel-and-casino-logo-primary-e1421523802448.jpg" alt="Belagio">
+                        <div class="partner-overlay">
+                            <span>Belagio</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/Wilson-Logo.jpg" alt="Wilson">
-                            <div class="partner-overlay">
-                                <span>Wilson</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/usabball.jpg" alt="Team USA Basketball">
+                        <div class="partner-overlay">
+                            <span>Team USA Basketball</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/A_GAME_Beverages_Logo (1).jpg" alt="A Game Energy Drink">
-                            <div class="partner-overlay">
-                                <span>A Game Energy Drink</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/adidaslogo.jpg" alt="Adidas">
+                        <div class="partner-overlay">
+                            <span>Adidas</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/jab.jpg" alt="Jab Camps">
-                            <div class="partner-overlay">
-                                <span>Jab Camps</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/SummitLogo.jpg" alt="Summitt Gym">
+                        <div class="partner-overlay">
+                            <span>Summitt Gym</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/SO-Unified-Sports-Patch-02.jpg" alt="Special Olympics">
-                            <div class="partner-overlay">
-                                <span>Special Olympics</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/FYS_LogoOriginal_campaign1681427044285.jpg" alt="FYS">
+                        <div class="partner-overlay">
+                            <span>FYS</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/nba-cares9943.jpg" alt="NBA Cares">
-                            <div class="partner-overlay">
-                                <span>NBA Cares</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/img.jpg" alt="IMG">
+                        <div class="partner-overlay">
+                            <span>IMG</span>
                         </div>
-                        <div class="partner-item">
-                            <img src="photos/barstool.jpg.jpg" alt="Barstool Sports">
-                            <div class="partner-overlay">
-                                <span>Barstool Sports</span>
-                            </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/Riddell+Primary+Wordmark_mid.jpg" alt="Ridell">
+                        <div class="partner-overlay">
+                            <span>Ridell</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/Wilson-Logo.jpg" alt="Wilson">
+                        <div class="partner-overlay">
+                            <span>Wilson</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/A_GAME_Beverages_Logo (1).jpg" alt="A Game Energy Drink">
+                        <div class="partner-overlay">
+                            <span>A Game Energy Drink</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/jab.jpg" alt="Jab Camps">
+                        <div class="partner-overlay">
+                            <span>Jab Camps</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/SO-Unified-Sports-Patch-02.jpg" alt="Special Olympics">
+                        <div class="partner-overlay">
+                            <span>Special Olympics</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/nba-cares9943.jpg" alt="NBA Cares">
+                        <div class="partner-overlay">
+                            <span>NBA Cares</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/barstool.jpg" alt="Barstool Sports">
+                        <div class="partner-overlay">
+                            <span>Barstool Sports</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplicate partners for seamless scroll -->
+                <div class="partners-list">
+                    <div class="partner-item">
+                        <img src="photos/logo_fivepointfour.jpg" alt="Five Point Four">
+                        <div class="partner-overlay">
+                            <span>Five Point Four</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/mlselogo.jpg" alt="MLSE">
+                        <div class="partner-overlay">
+                            <span>MLSE</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/bglogo.jpg" alt="BG">
+                        <div class="partner-overlay">
+                            <span>BG</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/SNY4.jpg" alt="SNY">
+                        <div class="partner-overlay">
+                            <span>SNY</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/Leaf-Logo.jpg" alt="Leaf">
+                        <div class="partner-overlay">
+                            <span>Leaf</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/cosmo.jpg" alt="Cosmo Hotel">
+                        <div class="partner-overlay">
+                            <span>Cosmo Hotel</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/bellagio-hotel-and-casino-logo-primary-e1421523802448.jpg" alt="Belagio">
+                        <div class="partner-overlay">
+                            <span>Belagio</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/usabball.jpg" alt="Team USA Basketball">
+                        <div class="partner-overlay">
+                            <span>Team USA Basketball</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/adidaslogo.jpg" alt="Adidas">
+                        <div class="partner-overlay">
+                            <span>Adidas</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/SummitLogo.jpg" alt="Summitt Gym">
+                        <div class="partner-overlay">
+                            <span>Summitt Gym</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/fanlink.jpg" alt="Fan Link">
+                        <div class="partner-overlay">
+                            <span>Fan Link</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/FYS_LogoOriginal_campaign1681427044285.jpg" alt="FYS">
+                        <div class="partner-overlay">
+                            <span>FYS</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/img.jpg" alt="IMG">
+                        <div class="partner-overlay">
+                            <span>IMG</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/Riddell+Primary+Wordmark_mid.jpg" alt="Ridell">
+                        <div class="partner-overlay">
+                            <span>Ridell</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/Wilson-Logo.jpg" alt="Wilson">
+                        <div class="partner-overlay">
+                            <span>Wilson</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/A_GAME_Beverages_Logo (1).jpg" alt="A Game Energy Drink">
+                        <div class="partner-overlay">
+                            <span>A Game Energy Drink</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/jab.jpg" alt="Jab Camps">
+                        <div class="partner-overlay">
+                            <span>Jab Camps</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/SO-Unified-Sports-Patch-02.jpg" alt="Special Olympics">
+                        <div class="partner-overlay">
+                            <span>Special Olympics</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/nba-cares9943.jpg" alt="NBA Cares">
+                        <div class="partner-overlay">
+                            <span>NBA Cares</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <img src="photos/barstool.jpg" alt="Barstool Sports">
+                        <div class="partner-overlay">
+                            <span>Barstool Sports</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
         <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 Prizm Sports Marketing. All Rights Reserved.</p>
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <p>&copy; 2024 Prizm Sports Marketing. All Rights Reserved.</p>
+            </div>
         </footer>
     </main>
 
-    <!-- JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    const scrollContainer = document.querySelector('.partners-scroll');
-    const scrollList = document.querySelector('.partners-list');
-    const prevButton = document.querySelector('.partners-prev');
-    const nextButton = document.querySelector('.partners-next');
-
-    let scrollAmount = 0;
-    const itemWidth = 150; // Width of each item
-    const visibleItems = 3; // Number of items to show at a time
-    const totalItems = scrollList.children.length;
-    const maxScrollAmount = itemWidth * (totalItems - visibleItems) + 1; // Adjusted max scroll amount
-
-    prevButton.addEventListener('click', () => {
-        scrollAmount -= itemWidth;
-        if (scrollAmount < 0) {
-            scrollAmount = 0;
-        }
-        scrollContainer.scrollTo({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    nextButton.addEventListener('click', () => {
-        scrollAmount += itemWidth;
-        if (scrollAmount > maxScrollAmount) {
-            scrollAmount = maxScrollAmount;
-        }
-        scrollContainer.scrollTo({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const prevButton = document.querySelector(".partners-prev");
-    const nextButton = document.querySelector(".partners-next");
-    const scrollContainer = document.querySelector(".partners-scroll");
-
-    prevButton.addEventListener("click", function() {
-        scrollContainer.scrollBy({
-            left: -scrollContainer.clientWidth,
-            behavior: 'smooth'
-        });
-    });
-
-    nextButton.addEventListener("click", function() {
-        scrollContainer.scrollBy({
-            left: scrollContainer.clientWidth,
-            behavior: 'smooth'
-        });
-    });
-});
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-        const fadeElements = document.querySelectorAll('.fade-in');
-
-        const observerOptions = {
-            root: null, // Use the viewport as the root
-            rootMargin: '0px',
-            threshold: 0.2 // Trigger when 10% of the element is visible
-        };
-
-        const observerCallback = (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Stop observing once the element is visible
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-        fadeElements.forEach(element => {
-            observer.observe(element);
-        });
-    });
-
-
-    </script>
+    <!-- Bootstrap JS and other scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
