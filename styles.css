@@ -251,6 +251,13 @@ footer p {
     margin: auto;
     overflow: hidden;
 }
+.carousel-sport-title {
+    font-size: 2.5rem;
+    color: #838383; /* Gold color */
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the title */
+    padding-top: 20px;    /* Add space above the title */
+}
 
 .carousel-container {
     display: flex;
@@ -263,7 +270,7 @@ footer p {
 }
 
 .carousel-image {
-    width: 100%;
+    width: 75%;
     height: auto; /* Responsive image */
 }
 
