@@ -29,8 +29,9 @@ header .nav-link {
 }
 
 header .nav-link:hover {
-    color: #FFD700; /* Gold on hover */
+    color: #acacac; /* Gold on hover */
 }
+
 
 /* Video Slider Section */
 .video-slider {
@@ -232,13 +233,49 @@ footer p {
         order: 1; /* Image and iframe items second */
     }
 
+    #events .col-md-6:nth-child(1) {
+        order: 1; /* Move the image div after the text */
+    }
+    #events .col-md-6:nth-child(2) {
+        order: 0; /* Move the text div before the image */
+    }
+
+    #nil .col-md-6:nth-child(1) {
+        order: 1; /* Move the image div after the text */
+    }
+    #nil .col-md-6:nth-child(2) {
+        order: 0; /* Move the text div before the image */
+    }
+@media (max-width: 768px) {
+        .bg-dark {
+            text-align: center; /* Center text in header */
+        }
+    
+        .nav {
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content: center; /* Center the navigation items */
+            flex-wrap: nowrap; /* Prevent wrapping to new lines */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+    
+        .nav-item {
+            margin: 0 1px; /* Add some space between items */
+        }
+    
+        .nav-link {
+            color: white; /* Keep link color white */
+            text-decoration: none; /* Remove underline */
+        }
+    }
     /* Scroll Animation */
     @keyframes scrollLeft {
         0% {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-1800%); /* Adjust this based on total width */
+            transform: translateX(-800%); /* Adjust this based on total width */
         }
     }
     .partners-scroll {
@@ -254,11 +291,14 @@ footer p {
     overflow: hidden;
 }
 .carousel-sport-title {
-    font-size: 2.5rem;
-    color: #838383; /* Gold color */
-    text-align: center;
-    margin-bottom: 20px; /* Add space below the title */
-    padding-top: 20px;    /* Add space above the title */
+    font-size: 2.5rem; /* Ensure both titles have the same font size */
+    color: white; /* Apply consistent color */
+    text-align: center; /* Center the titles */
+    margin-bottom: 20px; /* Ensure the same spacing below the title */
+    padding-top: 20px; /* Consistent padding above the title */
+    width: 100%; /* Ensure full-width alignment */
+    max-width: 100%; /* Ensures title doesn't get squished */
+    line-height: 1.2; /* Improve readability and even spacing */
 }
 
 .carousel-container {
@@ -308,27 +348,52 @@ footer p {
     .content {
         display: flex;
         flex-direction: row; /* Side by side on larger screens */
-        justify-content: space-between; /* Space between items */
+        justify-content: space-between;
+         /* Space between items */
     }
     
     .item {
-        width: 50%; /* Each item occupies half the width */
+        width: 50%;
+         /* Each item occupies half the width */
     }
 
     /* Alternate order for even and odd sections */
     /* The first section will have text on the left */
     .about:nth-child(odd) .item:first-child {
-        order: 0; /* Text on left */
+        order: 0;
+         /* Text on left */
     }
     .about:nth-child(odd) .item:last-child {
-        order: 1; /* Image on right */
+        order: 1;
+         /* Image on right */
     }
     
     /* The second section will have image on left */
     .about:nth-child(even) .item:first-child {
-        order: 1; /* Image on left */
+        order: 1;
+         /* Image on left */
     }
     .about:nth-child(even) .item:last-child {
-        order: 0; /* Text on right */
+        order: 0;
+         /* Text on right */
+    }
+        /* Scroll Animation */
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-240%); /* Adjust this based on total width */
+        }
+    }
+    .partners-scroll {
+        display: flex;
+        animation: scrollLeft 12s linear infinite; /* Speed of the scroll */
+    }
+    .foot-help {
+        margin-left: 27%
+    }
+    .foot-help-contact {
+        margin-left: 100%
     }
 }
