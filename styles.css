@@ -268,6 +268,10 @@ footer p {
             color: white; /* Keep link color white */
             text-decoration: none; /* Remove underline */
         }
+        .responsive-image {
+            width: 80%; /* Set this to the smaller size for mobile */
+            max-width: 300px; /* Maximum width for mobile devices */
+        }
     }
     /* Scroll Animation */
     @keyframes scrollLeft {
