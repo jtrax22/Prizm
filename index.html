@@ -62,20 +62,58 @@
     <!-- Video Slider Section -->
     <section id="home" class="video-slider position-relative">
         <div style="padding:56.25% 0 0 0;position:relative;">
-            <video 
-                id="myVideo"
-                src="https://download-video.akamaized.net/v3-1/playback/f35a7b76-023e-4b0e-8797-27fe74eec3b0/37636473-81515bfa?__token__=st=1731374364~exp=1731388764~acl=%2Fv3-1%2Fplayback%2Ff35a7b76-023e-4b0e-8797-27fe74eec3b0%2F37636473-81515bfa%2A~hmac=3920ae99e7997482fd7e55af41234c923e945d9647004d20c3a98231175f2d56&r=dXM%3D" 
+            <iframe 
+                id="myVideo" 
+                src="https://www.youtube.com/embed/9JLPp-TJSbY?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&enablejsapi=1" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
                 style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                autoplay 
-                muted 
-                playsinline
-            ></video>
+                allowfullscreen
+            ></iframe>
         </div>
         <div class="overlay-text">
-            <!-- Optional overlay elements here -->
+            <!-- Optional overlay elements -->
         </div>
     </section>
 </main>
+
+<script>
+    // Set up YouTube IFrame API
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('myVideo', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    function onPlayerStateChange(event) {
+        // Check if the video is playing
+        if (event.data == YT.PlayerState.PLAYING) {
+            const checkTime = () => {
+                // Loop the video if it exceeds 26 seconds
+                if (player.getCurrentTime() >= 26) {
+                    player.seekTo(0); // Go back to the start
+                }
+                requestAnimationFrame(checkTime); // Check again
+            };
+            requestAnimationFrame(checkTime);
+        }
+    }
+
+    // Load the IFrame Player API asynchronously
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+</script>
+
+
 
 <script>
     // Get the video element
