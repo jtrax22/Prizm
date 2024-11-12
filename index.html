@@ -57,22 +57,43 @@
 </header>
 
 
-    <!-- Main Section -->
-    <main>
-        <!-- Video Slider Section -->
-        <section id="home" class="video-slider position-relative">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-                <iframe src="https://player.vimeo.com/video/1018528990?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&badge=0&autopause=0" 
-                        frameborder="0" 
-                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                        ></iframe>
-            </div>
-            <div class="overlay-text">
-                <!-- <img src="photos/PSM-logo.jpg" alt="PSM logo" class="psm-image img-fluid"> -->
-                
-            </div>
-        </section>
+<!-- Main Section -->
+<main>
+    <!-- Video Slider Section -->
+    <section id="home" class="video-slider position-relative">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <video 
+                id="myVideo"
+                src="https://download-video.akamaized.net/v3-1/playback/f35a7b76-023e-4b0e-8797-27fe74eec3b0/37636473-81515bfa?__token__=st=1731374364~exp=1731388764~acl=%2Fv3-1%2Fplayback%2Ff35a7b76-023e-4b0e-8797-27fe74eec3b0%2F37636473-81515bfa%2A~hmac=3920ae99e7997482fd7e55af41234c923e945d9647004d20c3a98231175f2d56&r=dXM%3D" 
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                autoplay 
+                muted 
+                playsinline
+            ></video>
+        </div>
+        <div class="overlay-text">
+            <!-- Optional overlay elements here -->
+        </div>
+    </section>
+</main>
+
+<script>
+    // Get the video element
+    const video = document.getElementById('myVideo');
+
+    // Loop video at 26 seconds
+    video.addEventListener('timeupdate', () => {
+        if (video.currentTime >= 26) {
+            video.currentTime = 0; // Restart video at 0 seconds
+            video.play();          // Continue playing
+        }
+    });
+</script>
+
+
+
+
+
 
 
 
